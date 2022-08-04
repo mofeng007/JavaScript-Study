@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          ++ 自增运算符
+             - ++ 使用后会使得原来的变量立刻增加1
+             -自增分为前自增(++a)和后自增(a++)
+             -无论是前自增还是后自增都会使变量立刻增加1
+             -不同的是++a和a++返回的值不同
+                a++ 是自增前的值 旧值
+                ++a 是自增后的值 新值
+
+         ++ 自减运算符
+             - -- 使用后会使得原来的变量立刻减少1
+             -自减分为前自减(--a)和后自减(a--)
+             -无论是前自减还是后自减都会使变量立刻减少1
+             -不同的是--a和a--返回的值不同
+                a-- 是自减前的值 旧值
+                --a 是自减后的值 新值    
+        */
+       let a=5;
+       let result = a++ + ++a + a;
+       document.write(result);
+       let b=5;
+       let result1 = b-- + --b + b;
+       document.write(result1);
+    </script>
+</body>
+</html>
