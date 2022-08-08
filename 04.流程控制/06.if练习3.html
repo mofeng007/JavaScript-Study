@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        练习3：
+           男大当婚，女大当嫁，女方家长会提出一些条件：
+              高：180cm以上；富：1000万以上；帅：500以上；
+              如果这三个都满足，则：一定会嫁！
+              如果这三个有满足，则：嫁，比上不足比下有余！
+              如果这三个都不满足，则：滚一边去！
+     -->
+     <script>
+        let height=+prompt("请输入身高！");
+        let rich=+prompt("请输入财富！");
+        let beauti=+prompt("请输入帅气值！");
+
+        if( (isNaN(height)) || (isNaN(rich)) || (isNaN(beauti)) ){
+            alert("你输入的不合法！请输入整数！");
+        }else if(height>180 && rich>1000 && beauti>500){
+            alert("一定会嫁！");
+        }else if(height>180 || rich>1000 || beauti>500){
+            alert("嫁，比上不足比下有余！");
+        }else{
+            alert("滚一边去！");
+        }
+     </script>
+</body>
+</html>

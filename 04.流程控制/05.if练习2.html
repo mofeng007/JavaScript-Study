@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        练习2：
+            从键盘输入一个成绩
+               当成绩为100时，奖励一架飞机
+               当成绩为80~99时，奖励一辆小车
+               当成绩为60~79时，奖励一本书
+               当成绩为其他时，奖励一个大耳光
+
+     -->
+     <script>
+        let score=+prompt("请输入成绩！");
+
+        if (isNaN(score) || score<0 || score>100) {
+            alert("你输入的不合法！请输入成绩！")
+        }else{
+            if(score===100){
+                alert("获得飞机！");
+            }else if(score>=80){
+                alert("获得小车！");
+            }else if(score>=60){
+                alert("获得书！");
+            }else{
+                alert("获得大耳光！");
+            }
+        }
+     </script>
+</body>
+</html>
