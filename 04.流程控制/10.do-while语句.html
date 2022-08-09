@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+          do-while语句：
+              -语法：
+                  do{
+                      语句...
+                  }while(条件表达式)
+
+              -执行流程：
+                  do-while语句执行时，会先执行do后的循环体，
+                      执行完毕后，会对while后的条件表达式进行判断
+                      如果为false，则循环终止
+                      如果为true，则继续执行循环体，以此类推
+                      
+              -和while的区别：
+                  while语句是先判断再执行
+                  do-while语句是先执行，再判断
+                  
+                  实质的区别：
+                     do-while语句可以保证循环至少被执行一次
+        */
+
+        // let i=10;
+        // while(i<5){
+        //     document.write(i);
+        //     i++;
+        // }
+
+        let i=10;
+        do{
+            document.write(i);
+            i++;
+        }while(i<5)
+    </script>
+</body>
+</html>
