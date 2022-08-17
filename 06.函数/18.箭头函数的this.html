@@ -31,7 +31,7 @@
             }
 
             const fn2 = () => {
-                console.log("fn2 -->", this) // 总是window
+                console.log("fn2 -->", this) //全局作用域，所以总是window
             }
 
             // fn() // window
@@ -39,7 +39,7 @@
 
             const obj = {
                 name:"孙悟空",
-                fn, // fn:fn
+                fn, // fn:fn,
                 fn2,
                 sayHello(){
                     console.log(this.name)
@@ -47,13 +47,13 @@
                     // function t(){
                     //     console.log("t -->", this)
                     // }
-                    // t()
+                    // t()  //window
 
                     const t2 = () => {
                         console.log("t2 -->", this)
                     }
 
-                    t2()
+                    t2()  //他的外层作用域是sayHello，sayHello的this就是obj
                 }
             }
 
